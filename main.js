@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const title = document.getElementById("title");
 const price = document.getElementById("price");
 const tax = document.getElementById("tax");
