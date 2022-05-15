@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -93,3 +94,100 @@
     <script src="main.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>CRUD Operations</h1>
+      </div>
+      <div class="inputs">
+        <input
+          onkeyup="notEmpty()"
+          placeholder="Product Title"
+          type="text"
+          id="title"
+        />
+        <div class="price">
+          <input
+            onkeyup="notEmpty()"
+            onkeyup="getTotal()"
+            placeholder="Price"
+            type="number"
+            id="price"
+          />
+          <input
+            onkeyup="getTotal()"
+            placeholder="Tax"
+            type="number"
+            id="tax"
+          />
+          <input
+            onkeyup="getTotal()"
+            placeholder="Discount"
+            type="number"
+            id="discount"
+          />
+          <span id="total"></span>
+        </div>
+        <div class="last">
+          <input
+            onkeyup="notEmpty()"
+            placeholder="Quantity"
+            type="text"
+            id="quantity"
+          />
+          <input placeholder="Category" type="text" id="category" />
+        </div>
+        <div class="btns">
+          <button id="submit">Create</button>
+          <button id="update">Update</button>
+          <button onclick="deleteAll()" id="deleteAll">Delete All</button>
+          <button onclick="backToNormal()" id="cancelBtn">Cancel</button>
+        </div>
+      </div>
+      <div class="outputs">
+        <div class="search">
+          <input
+            onkeyup="searchData(this.value)"
+            placeholder="Search.."
+            type="text"
+            id="search"
+            autocomplete="off"
+          />
+        </div>
+        <table>
+          <tr class="tabelH">
+            <th>ID</th>
+            <th class="titleTable">Title</th>
+            <th>Price</th>
+            <th>Tax</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+>>>>>>> 3cbcf3c2c0aa26cebb7e9bef00a9e0908fc96955
