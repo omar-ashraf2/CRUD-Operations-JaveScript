@@ -190,9 +190,9 @@ function searchData(value) {
               <th>${productData[i].discount}</th>
               <th>${productData[i].total}</th>
               <th>${productData[i].category}</th>
-              <th onclick="updateData(${i})" class="icon"><img src="icons8-edit-32.png" alt="Edit" /></th>
+              <th onclick="updateData(${i})" class="icon"><img src="imgs/icons8-edit-32.png" alt="Edit" /></th>
               <th onclick="deleteData(${i})" class="icon">
-                <img src="icons8-delete-32.png" alt="Delete" />
+                <img src="imgs/icons8-delete-32.png" alt="Delete" />
               </th>
             </tr>`;
     }
